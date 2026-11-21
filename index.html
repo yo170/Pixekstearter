@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Book an affordable website made for your idea. Simple websites from $5 and custom-inspired websites from $10.">
+<title>PixelStarter — Websites from $5</title>
+<style>
+:root{--ink:#17211d;--muted:#65736c;--cream:#f7f7f1;--green:#b9f36b;--line:#e2e8df;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+header{padding:22px 0;display:flex;align-items:center;justify-content:space-between}.logo{font-weight:900;font-size:1.25rem;letter-spacing:-.06em}.logo span{background:var(--green);padding:5px 8px;border-radius:8px;margin-right:7px}
+nav{display:flex;gap:26px;font-size:.92rem;color:var(--muted)}.navbtn,.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--ink);color:white;padding:13px 19px;border-radius:999px;font-weight:750;border:0;cursor:pointer}.navbtn{padding:10px 16px}
+.hero{padding:76px 0 84px;display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}.eyebrow{font-size:.78rem;font-weight:850;letter-spacing:.14em;text-transform:uppercase;color:#4d7041}.hero h1{font-size:clamp(3.3rem,7vw,6.4rem);line-height:.93;letter-spacing:-.075em;margin:18px 0 22px;max-width:700px}.hero h1 em{font-style:normal;color:#618b3e}.hero p{font-size:1.12rem;line-height:1.7;color:var(--muted);max-width:520px}.actions{display:flex;gap:12px;align-items:center;margin-top:28px;flex-wrap:wrap}.btn.secondary{background:transparent;color:var(--ink);border:1px solid #cbd5c9}.note{font-size:.82rem;color:var(--muted);margin-top:15px}
+.preview{background:#dff0d1;border-radius:28px;padding:22px;transform:rotate(2deg);box-shadow:0 25px 70px #233a241c}.browser{background:white;border-radius:18px;overflow:hidden;box-shadow:0 8px 24px #20351d16}.browserbar{height:35px;background:#f2f4ef;display:flex;align-items:center;gap:5px;padding:0 13px}.dot{width:7px;height:7px;background:#c8d0c5;border-radius:50%}.mock{padding:28px 25px 30px;min-height:310px}.mock small{font-weight:900;letter-spacing:.08em}.mock h2{font-size:2.5rem;line-height:.98;letter-spacing:-.06em;margin:40px 0 12px}.mock p{font-size:.8rem;color:#68756d;line-height:1.5}.mocktag{display:inline-block;background:var(--green);border-radius:20px;padding:8px 12px;font-size:.7rem;font-weight:800;margin-top:10px}
+section{padding:70px 0}.sectionhead{max-width:650px;margin-bottom:32px}.sectionhead h2{font-size:clamp(2.2rem,4vw,3.5rem);letter-spacing:-.065em;line-height:1;margin:12px 0}.sectionhead p{color:var(--muted);line-height:1.65}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:18px}.card{background:white;border:1px solid var(--line);border-radius:22px;padding:30px;position:relative}.card.featured{background:var(--ink);color:white;border-color:var(--ink)}.badge{font-size:.72rem;font-weight:850;letter-spacing:.1em;text-transform:uppercase;color:#648a45}.featured .badge{color:var(--green)}.price{font-size:3.8rem;font-weight:900;letter-spacing:-.08em;margin:15px 0 4px}.price span{font-size:1rem;letter-spacing:0;font-weight:650}.card p{color:var(--muted);line-height:1.6}.featured p{color:#c1cdc5}.card ul{padding:0;list-style:none;line-height:2.1;margin:22px 0 26px}.card li:before{content:"✓";font-weight:900;color:#6c9848;margin-right:10px}.featured li:before{color:var(--green)}.card .btn{width:100%}.featured .btn{background:var(--green);color:var(--ink)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.step{border-top:1px solid var(--line);padding-top:20px}.step b{font-size:.75rem;color:#6b914e}.step h3{font-size:1.25rem;margin:10px 0}.step p{color:var(--muted);line-height:1.6;font-size:.95rem}
+.booking{background:#e9f3e2;border-radius:28px;padding:42px;display:grid;grid-template-columns:.8fr 1.2fr;gap:42px}.booking h2{font-size:2.7rem;letter-spacing:-.07em;line-height:1;margin:12px 0}.booking p{color:var(--muted);line-height:1.6}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}label{font-size:.82rem;font-weight:800}input,select,textarea{font:inherit;padding:13px 14px;border:1px solid #d2ddd0;border-radius:12px;background:white;color:var(--ink);width:100%}textarea{min-height:105px;resize:vertical}.formgrid button{grid-column:1/-1;margin-top:5px}.fineprint{font-size:.76rem!important;color:#758078!important;margin-top:12px}
+footer{padding:28px 0 42px;color:var(--muted);font-size:.85rem;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+@media(max-width:760px){nav{display:none}.hero{grid-template-columns:1fr;padding:48px 0 55px;gap:30px}.cards,.booking{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.booking{padding:28px}.preview{max-width:520px;margin:auto;width:100%}.formgrid{grid-template-columns:1fr}.field.full,.formgrid button{grid-column:auto}}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <a class="logo" href="#"><span>✳</span>pixelstarter</a>
+  <nav><a href="#packages">Packages</a><a href="#process">How it works</a><a href="#book">Book me</a></nav>
+  <a class="navbtn" href="#book">Start a project ↗</a>
+</header>
+<main>
+<section class="hero wrap">
+  <div>
+    <div class="eyebrow">Your idea deserves a website</div>
+    <h1>Big ideas.<br><em>Small prices.</em></h1>
+    <p>Need a website for your business, project, or personal brand? I make clean, simple websites at beginner-friendly prices. Pick a package and tell me what you have in mind.</p>
+    <div class="actions"><a class="btn" href="#packages">See the prices ↗</a><a class="btn secondary" href="#book">Book a website</a></div>
+    <div class="note">Starting at just $5 · Friendly service · Made for the web</div>
+  </div>
+  <div class="preview"><div class="browser"><div class="browserbar"><i class="dot"></i><i class="dot"></i><i class="dot"></i></div><div class="mock"><small>YOUR BRAND ✳</small><h2>A fresh look<br>for your next<br>big thing.</h2><p>A website that makes your idea easy to find<br>and even easier to love.</p><span class="mocktag">MADE FOR YOU — 2026</span></div></div></div>
+</section>
+<section id="packages" class="wrap">
+  <div class="sectionhead"><div class="eyebrow">Simple pricing</div><h2>Choose your website.</h2><p>Clear starter prices. We'll confirm the details and final scope with you before work begins.</p></div>
+  <div class="cards">
+    <article class="card"><div class="badge">Starter site</div><div class="price">$5</div><p>A simple one-page website to get your idea online.</p><ul><li>One-page layout</li><li>Your text and contact details</li><li>Mobile-friendly design</li><li>One small revision</li></ul><a class="btn" href="#book" data-package="Starter Website — $5">Book the $5 package</a></article>
+    <article class="card featured"><div class="badge">Custom-inspired site</div><div class="price">$10</div><p>A more styled website inspired by a reference site you like, such as a hair or beauty website.</p><ul><li>Custom look and feel</li><li>Up to three sections/pages (scope confirmed first)</li><li>Mobile-friendly design</li><li>One revision</li></ul><a class="btn" href="#book" data-package="Custom-Inspired Website — $10">Book the $10 package</a></article>
+  </div>
+  <p class="note">Hosting, domain names, paid services, online stores, and advanced features may cost extra. The $10 package is an original design inspired by your reference—not a copy of another site's branding or content.</p>
+</section>
+<section id="process" class="wrap">
+  <div class="sectionhead"><div class="eyebrow">Easy as 1, 2, 3</div><h2>From idea to online.</h2></div>
+  <div class="steps">
+    <div class="step"><b>01 / TELL ME</b><h3>Share your idea</h3><p>Tell me what the website is for, what style you like, and which package you want.</p></div>
+    <div class="step"><b>02 / I BUILD</b><h3>Review the draft</h3><p>I'll confirm the details, then create your website and share a preview for your included revision.</p></div>
+    <div class="step"><b>03 / LAUNCH</b><h3>Get your website</h3><p>After approval, I'll provide the finished files and help explain how to publish them.</p></div>
+  </div>
+</section>
+<section id="book" class="wrap">
+  <div class="booking">
+    <div><div class="eyebrow">Let's make it happen</div><h2>Book your website.</h2><p>Fill this out with a few details. Your email app will open with your project request ready to send.</p></div>
+    <form id="bookingForm" class="formgrid">
+      <div class="field"><label for="name">Your name</label><input id="name" name="name" placeholder="Name" required></div>
+      <div class="field"><label for="email">Your email</label><input id="email" name="email" type="email" placeholder="you@example.com" required></div>
+      <div class="field"><label for="package">Package</label><select id="package" name="package" required><option value="">Choose a package</option><option>Starter Website — $5</option><option>Custom-Inspired Website — $10</option></select></div>
+      <div class="field"><label for="type">What is it for?</label><input id="type" name="type" placeholder="Business, portfolio, hair, etc."></div>
+      <div class="field full"><label for="reference">Website you like (optional)</label><input id="reference" name="reference" placeholder="Paste a website link or describe the style"></div>
+      <div class="field full"><label for="details">Tell me about your website</label><textarea id="details" name="details" placeholder="What should the website say or include?" required></textarea></div>
+      <button class="btn" type="submit">Send booking request ↗</button>
+    </form>
+  </div>
+  <p class="fineprint wrap">Demo booking form: before publishing, replace the email address in the website code with your own. This form prepares an email; it does not take payment or automatically confirm a booking.</p>
+</section>
+</main>
+<footer class="wrap"><a class="logo" href="#"><span>✳</span>pixelstarter</a><div>Small websites. Big first steps.</div><div>© 2026 PixelStarter</div></footer>
+<script>
+document.querySelectorAll('[data-package]').forEach(link=>link.addEventListener('click',()=>{document.getElementById('package').value=link.dataset.package;}));
+document.getElementById('bookingForm').addEventListener('submit',function(e){
+ e.preventDefault();
+ const f=new FormData(this);
+ const subject=encodeURIComponent('Website booking request — '+f.get('package'));
+ const body=encodeURIComponent('Name: '+f.get('name')+'\\nEmail: '+f.get('email')+'\\nPackage: '+f.get('package')+'\\nWebsite type: '+f.get('type')+'\\nReference: '+f.get('reference')+'\\n\\nProject details:\\n'+f.get('details'));
+ window.location.href='mailto:YOUR-EMAIL@example.com?subject='+subject+'&body='+body;
+});
+</script>
+</body>
+</html>
